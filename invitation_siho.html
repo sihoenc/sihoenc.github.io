@@ -182,6 +182,21 @@
             color: #f75270;
         }
 
+        /* 📱 모바일 전용 스타일 */
+        @media (max-width: 480px) {
+            .info-row {
+                flex-direction: column; /* 세로 배치 */
+                align-items: flex-start;
+            }
+            .info-row .label {
+                min-width: auto;   /* 라벨 폭 고정 해제 */
+                margin-bottom: 3px; /* value와 간격 */
+            }
+            .info-row .value {
+                word-break: normal;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -219,10 +234,6 @@
                     <span class="label">장소</span>
                     <span class="value">경기도 포천시 군내면 풍류산길 71 (구읍리 395)</span>
                 </div>
-                <!-- <div class="info-row">
-                    <span class="label">찾아오는 길</span>
-                    <span class="value"><a class="map-link" href="#">네이버 지도 열기</a></span>
-                </div> -->
             </div>
             
             <!-- ✅ 텍스트 3 -->
