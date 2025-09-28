@@ -181,15 +181,23 @@
         /* 📱 모바일 전용 스타일 */
         @media (max-width: 480px) {
             .info-row {
-                flex-direction: column;
-                align-items: flex-start;
+                flex-direction: row;       /* 항상 한 줄 배치 */
+                align-items: center;
+                flex-wrap: nowrap;         /* 줄바꿈 방지 */
+                gap: 5px;                  /* label과 value 간격 최소화 */
             }
+        
             .info-row .label {
-                min-width: auto;
-                margin-bottom: 3px;
+                font-size: 14px;           /* 모바일 폰트 축소 */
+                min-width: 60px;           /* 라벨 폭 최소화 */
             }
+        
             .info-row .value {
-                word-break: break-word;
+                font-size: 14px;           /* 모바일 폰트 축소 */
+                flex: 1 1 auto;            /* 가능한 공간 차지 */
+                white-space: nowrap;        /* 줄넘김 방지 */
+                overflow: hidden;          /* 넘치면 숨김 */
+                text-overflow: ellipsis;   /* 넘치면 ... 표시 */
             }
         }
 
