@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 썸네일/브라우저 탭 제목에만 🎊 추가 -->
     <title>🎊시호이엔씨 신축공장 개업식🎊</title>
 
     <style>
@@ -17,6 +16,8 @@
             font-family: 'Noto Sans KR', sans-serif;
             -webkit-font-smoothing: antialiased;
             color: #333333;
+            /* ▼▼▼ 모든 텍스트에 단어 단위 줄바꿈을 적용합니다 ▼▼▼ */
+            word-break: keep-all; 
         }
 
         .container {
@@ -42,7 +43,6 @@
             margin: 0;
             padding-top: 10px;
             color: #1f2f78;
-            word-break: keep-all;
         }
 
         @media (max-width: 480px) {
@@ -113,12 +113,10 @@
         }
 
         .info-box {
-            border-left: 3px solid #1f2f78;
-            padding-left: 25px;
+            padding: 15px 20px;
             margin: 40px 0;
             text-align: left;
-            background-color: #f0f0f0; /* 회색 배경 */
-            padding: 15px 20px;
+            background-color: #f0f0f0;
             border-radius: 6px;
         }
 
@@ -128,18 +126,16 @@
             align-items: center;
             gap: 10px;
             margin: 10px 0;
-            flex-wrap: wrap; /* 화면 좁을 때 자동 줄 바꿈 방지 */
         }
 
         .info-row .label {
             font-weight: 700;
             min-width: 70px;
-            flex-shrink: 0; /* 라벨 줄어들지 않도록 */
+            flex-shrink: 0;
         }
 
         .info-row .value {
             flex: 1 1 auto;
-            word-break: break-word; /* 긴 문장 자동 줄바꿈 */
         }
 
         .map-link {
@@ -178,14 +174,8 @@
             color: #999;
         }
 
-        /* 📱 모바일 전용 스타일 */
         @media (max-width: 480px) {
-            .info-row {
-                gap: 5px;
-            }
-            .info-row .label {
-                font-size: 14px;
-            }
+            .info-row .label,
             .info-row .value {
                 font-size: 14px;
             }
@@ -222,12 +212,12 @@
                 </div>
                 <div class="info-row">
                     <span class="label">장소</span>
-                    <span class="value">경기도 포천시 군내면 풍류산길 71 (구읍리 395)</span>
+                    <span class="value">경기도 포천시 군내면 풍류산길 71 (구읍리 3D95)</span>
                 </div>
                 <div class="info-row">
                     <span class="label">찾아오는 길</span>
                     <span class="value">
-                        <a class="map-link" href="#">네이버 지도 열기</a>
+                        <a class="map-link" href="https://naver.me/xWzVYW3C" target="_blank">네이버 지도 열기</a>
                     </span>
                 </div>
             </div>
@@ -241,12 +231,12 @@
                 <a href="https://sites.google.com/view/sihoenc/%ED%99%88" 
                    target="_blank" 
                    class="homepage-btn">
-                    시호이엔씨 공식 홈페이지
+                   시호이엔씨 공식 홈페이지
                 </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7KU7qm-JEx4MvLWLKaecCYHRK7l2Eqw_xMODg7HDL0oCb7w/viewform?usp=header" 
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7KU7qm-JEx4MvLWLKaecCYHRK7l2Eqw_xMODg7HDL0oCb7w/viewform?usp=sf_link" 
                    target="_blank" 
                    class="survey-btn">
-                    참석 여부 사전설문 참여하기
+                   참석 여부 사전설문 참여하기
                 </a>
             </div>
 
