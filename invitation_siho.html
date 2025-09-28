@@ -38,12 +38,12 @@
             margin: 0;
             padding-top: 10px;
             color: #1f2f78;
-            word-break: keep-all; /* 줄 쪼개지 않게 */
+            word-break: keep-all;
         }
         
         @media (max-width: 480px) {
             .title {
-                font-size: 22px; /* 화면 좁을 때 자동 축소 */
+                font-size: 22px;
                 line-height: 1.3;
             }
         }
@@ -59,7 +59,7 @@
         
         @media (max-width: 480px) {
             .subtitle {
-                font-size: 14px; /* 화면 좁을 때 자동 축소 */
+                font-size: 14px;
                 line-height: 1.4;
             }
         }
@@ -121,10 +121,6 @@
             display: inline-block;
             width: 90px;
         }
-        .info-box .separator {
-            color: #d0d0d0;
-            margin: 0 15px;
-        }
         .rsvp-text {
             font-size: 16px;
             line-height: 1.8;
@@ -158,18 +154,18 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 5px;
-            margin: 10px 0;
+            gap: 10px;
+            margin: 12px 0;
         }
         
         .info-row .label {
             font-weight: 700;
-            min-width: 70px; /* 텍스트 고정 */
+            min-width: 70px;
         }
         
         .info-row .value {
             flex: 1;
-            word-break: keep-all;
+            word-break: break-word; /* 자동 줄바꿈 허용 */
         }
         
         .map-link {
@@ -185,15 +181,15 @@
         /* 📱 모바일 전용 스타일 */
         @media (max-width: 480px) {
             .info-row {
-                flex-direction: column; /* 세로 배치 */
+                flex-direction: column;
                 align-items: flex-start;
             }
             .info-row .label {
-                min-width: auto;   /* 라벨 폭 고정 해제 */
-                margin-bottom: 3px; /* value와 간격 */
+                min-width: auto;
+                margin-bottom: 3px;
             }
             .info-row .value {
-                word-break: normal;
+                word-break: break-word;
             }
         }
 
@@ -204,13 +200,11 @@
         <img src="https://sihoenc.github.io/images/siho_office.png" alt="시호이엔씨 신사옥" class="header-image">
 
         <div class="content-wrapper">
-            <!-- 화면용 제목 (이모지 없음) -->
             <h1 class="title">시호이엔씨 신축공장 개업식</h1>
             <p class="subtitle">시호이엔씨 주식회사의 새로운 시작을 함께 축하해주세요 🎉✨</p>
             
             <hr class="divider">
 
-            <!-- ✅ 텍스트 1 -->
             <p class="content">
                 항상 저희 시호이엔씨에 깊은 관심과 따뜻한 성원을 보내주시는 모든 분들께 진심으로 감사드립니다.
             </p>
@@ -219,35 +213,32 @@
                 저희의 시공 사례와 소식을 편하게 살펴보실 수 있으니 방문해 주시면 감사하겠습니다.
             </p>
 
-            <!-- ✅ 텍스트 2 -->
             <p class="content">
                 귀한 걸음 하시어 자리를 빛내주시고, 아낌없는 조언과 격려로 저희의 앞날을 축복해주시면 더 없는 기쁨이겠습니다.
             </p>
 
-            <!-- ✅ 행사 정보 -->
             <div class="info-box">
                 <div class="info-row">
                     <span class="label">일시</span>
-                    <span class="value">2025년 10월 25일 (토) <br> 오후 12시 ~ 3시</span>
+                    <span class="value">2025년 10월 25일 (토) 오후 12시 ~ 3시</span>
                 </div>
                 <div class="info-row">
                     <span class="label">장소</span>
                     <span class="value">경기도 포천시 군내면 풍류산길 71 (구읍리 395)</span>
                 </div>
-            <div class="info-row"> 
-                <span class="label">찾아오는 길</span> 
-                <span class="value">
-                    <a class="map-link" href="#">네이버 지도 열기</a></span> 
+                <div class="info-row"> 
+                    <span class="label">찾아오는 길</span> 
+                    <span class="value">
+                        <a class="map-link" href="#">네이버 지도 열기</a>
+                    </span> 
                 </div> 
             </div>
             
-            <!-- ✅ 텍스트 3 -->
             <p class="content">
                 또한 원활한 행사 준비를 위해 참석 여부를 사전에 확인하고자 하오니,<br>
                 <strong>2초만 시간을 내시어 아래 설문에 참여해 주시면 감사하겠습니다.</strong>
             </p>
             
-            <!-- ✅ 두 개의 버튼 (가운데 정렬 + 나란히 배치) -->
             <div class="btn-container">
                 <a href="https://sites.google.com/view/sihoenc/%ED%99%88" 
                    target="_blank" 
