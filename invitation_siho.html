@@ -142,6 +142,24 @@
             font-size: 12px;
             color: #999;
         }
+        
+        .info-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .info-row .label {
+            font-weight: 700;
+            min-width: 70px; /* 텍스트 고정 */
+        }
+        
+        .info-row .value {
+            flex: 1;
+            word-break: keep-all;
+        }
     </style>
 </head>
 <body>
@@ -169,9 +187,18 @@
 
             <!-- ✅ 행사 정보 -->
             <div class="info-box">
-                <p><span class="label">일시</span> <span class="separator">|</span> 2025년 10월 25일 (토) 오후 12시 ~ 오후 3시</p>
-                <p><span class="label">장소</span> <span class="separator">|</span> 경기도 포천시 군내면 풍류산길 71 (구읍리 395)</p>
-                <p><span class="label">찾아오는 길</span> <span class="separator">|</span> <a href="https://naver.me/xWzVYW3C" target="_blank">네이버 지도에서 위치 확인하기</a></p>
+                <div class="info-row">
+                    <span class="label">일시</span>
+                    <span class="value">2025년 10월 25일 (토) 오후 3시</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">장소</span>
+                    <span class="value">경기도 포천시 군내면 풍류산길 71 (구읍리 395)</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">찾아오는 길</span>
+                    <span class="value"><a class="map-link" href="#">네이버 지도 열기</a></span>
+                </div>
             </div>
             
             <!-- ✅ 텍스트 3 -->
