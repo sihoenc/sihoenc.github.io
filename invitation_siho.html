@@ -50,11 +50,6 @@
             background-color: #1f2f78;
             margin: 40px 0;
         }
-        /* ✅ 본문 전체 배경 섹션 */
-        .section-bg {
-            background-color: #f7f7f7;
-            padding: 40px 60px;
-        }
         .content {
             font-size: 16px;
             line-height: 1.8;
@@ -62,10 +57,9 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        /* ✅ 홈페이지 버튼 */
-        .homepage-btn {
+        .homepage-btn, .survey-btn {
             display: inline-block;
-            margin: 25px 0 40px;
+            margin: 25px 0;
             padding: 10px 20px;
             background-color: #1f2f78;
             color: #ffffff;
@@ -74,8 +68,11 @@
             border-radius: 6px;
             font-size: 15px;
         }
-        .homepage-btn:hover {
+        .homepage-btn:hover, .survey-btn:hover {
             opacity: 0.9;
+        }
+        .btn-center {
+            text-align: center;
         }
         .info-box {
             border-left: 3px solid #1f2f78;
@@ -136,43 +133,54 @@
             
             <hr class="divider">
 
-            <!-- ✅ 배경 적용 시작 -->
-            <div class="section-bg">
-                <p class="content">
-                    항상 저희 시호이엔씨에 깊은 관심과 따뜻한 성원을 보내주시는 모든 분들께 진심으로 감사드립니다.
-                    이번 신축공장과 더불어 새롭게 단장한 공식 홈페이지에서도
-                    저희의 시공 사례와 소식을 편하게 살펴보실 수 있으니 방문해 주시면 감사하겠습니다.
-                </p>
+            <!-- ✅ 본문 1 -->
+            <p class="content">
+                항상 저희 시호이엔씨에 깊은 관심과 따뜻한 성원을 보내주시는 모든 분들께 진심으로 감사드립니다.
+                이번 신축공장과 더불어 새롭게 단장한 공식 홈페이지에서도
+                저희의 시공 사례와 소식을 편하게 살펴보실 수 있으니 방문해 주시면 감사하겠습니다.
+            </p>
 
+            <!-- ✅ 공식 홈페이지 버튼 (가운데 정렬) -->
+            <div class="btn-center">
                 <a href="https://sites.google.com/view/sihoenc/%ED%99%88" 
                    target="_blank" 
                    class="homepage-btn">
                     시호이엔씨 공식 홈페이지
                 </a>
-
-                <p class="content">
-                    귀한 걸음 하시어 자리를 빛내주시고,<br>
-                    아낌없는 조언과 격려로 저희의 앞날을 축복해주시면<br>
-                    더 없는 기쁨이겠습니다.
-                </p>
-
-                <div class="info-box">
-                    <p><span class="label">일시</span> <span class="separator">|</span> 2025년 10월 25일 (토) 오후 3시</p>
-                    <p><span class="label">장소</span> <span class="separator">|</span> 경기도 포천시 군내면 풍류산길 71 (구읍리 395)</p>
-                    <p><span class="label">찾아오는 길</span> <span class="separator">|</span> <a href="https://naver.me/xWzVYW3C" target="_blank">네이버 지도에서 위치 확인하기</a></p>
-                </div>
-
-                <p class="rsvp-text">
-                    원활한 행사 준비를 위해 참석이 어려우실 경우,<br>
-                    미리 연락 주시면 감사하겠습니다.
-                </p>
-
-                <div class="signature">
-                    시호이엔씨 주식회사<br>
-                    대표이사 정명수 올림
-                </div>
             </div>
-            <!-- ✅ 배경 적용 끝 -->
+
+            <!-- ✅ 본문 2 (수정 및 설문 안내 추가) -->
+            <p class="content">
+                귀한 걸음 하시어 자리를 빛내주시고, 아낌없는 조언과 격려로 저희의 앞날을 축복해주시면 더 없는 기쁨이겠습니다.<br><br>
+                또한 원활한 행사 준비를 위해 참석 여부를 사전에 확인드리고자 하오니,<br>
+                2초만 시간을 내시어 아래 설문에 참여해 주시면 감사하겠습니다.
+            </p>
+
+            <!-- ✅ 설문 버튼 (가운데 정렬) -->
+            <div class="btn-center">
+                <a href="https://example.com/survey" 
+                   target="_blank" 
+                   class="survey-btn">
+                    참석 여부 설문 참여하기
+                </a>
+            </div>
+
+            <!-- ✅ 행사 정보 -->
+            <div class="info-box">
+                <p><span class="label">일시</span> <span class="separator">|</span> 2025년 10월 25일 (토) 오후 3시</p>
+                <p><span class="label">장소</span> <span class="separator">|</span> 경기도 포천시 군내면 풍류산길 71 (구읍리 395)</p>
+                <p><span class="label">찾아오는 길</span> <span class="separator">|</span> <a href="https://naver.me/xWzVYW3C" target="_blank">네이버 지도에서 위치 확인하기</a></p>
+            </div>
+
+            <p class="rsvp-text">
+                원활한 행사 준비를 위해 참석이 어려우실 경우,<br>
+                미리 연락 주시면 감사하겠습니다.
+            </p>
+
+            <div class="signature">
+                시호이엔씨 주식회사<br>
+                대표이사 정명수 올림
+            </div>
 
             <div class="footer">
                 <img src="https://sihoenc.github.io/images/siho_logo_big.png" alt="시호이엔씨 로고" class="logo-image">
